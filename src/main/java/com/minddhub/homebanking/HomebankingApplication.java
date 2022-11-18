@@ -42,9 +42,9 @@ public class HomebankingApplication {
 			accountRepository.save(account1);
 			Account account2 = new Account(AccountType.SAVINGS, 7500.00, client1);
 			accountRepository.save(account2);
-			Account account3 = new Account(AccountType.SAVINGS, 2000.00, client2);
+			Account account3 = new Account(AccountType.CURRENT, 2000.00, client2);
 			accountRepository.save(account3);
-			Account account4 = new Account(AccountType.CURRENT, 8000.00, client2);
+			Account account4 = new Account(AccountType.SAVINGS, 8000.00, client2);
 			accountRepository.save(account4);
 
 			//Instancio las Transactions asociando su respectiva Account y las guardo
